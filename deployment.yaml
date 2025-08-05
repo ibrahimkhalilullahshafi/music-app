@@ -17,7 +17,7 @@ spec:
         - name: music-app-container
           image: ibrahimkhalilullah21/music-app:latest
           ports:
-            - containerPort: 3000
+            - containerPort: 8080
           imagePullPolicy: Always
 ---
 apiVersion: v1
@@ -32,5 +32,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 3000
+      targetPort: 8080
       nodePort: 30001
